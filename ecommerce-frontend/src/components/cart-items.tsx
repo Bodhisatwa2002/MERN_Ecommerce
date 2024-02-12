@@ -12,7 +12,7 @@ const CartItem = ({ cartItem }: CartItemProps) => {
       <img src={photo} alt={name} />
       <article>
         <Link to={`/product/${productId}`}>{name}</Link>
-        <span>${price}</span>
+        <span>₹{price}</span>
       </article>
       <div>
         <button>-</button>
@@ -20,7 +20,7 @@ const CartItem = ({ cartItem }: CartItemProps) => {
         <button>+</button>
       </div>
       <button>
-        <FaTrash/>
+        <FaTrash />
       </button>
     </div>
   );
